@@ -4,11 +4,15 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Main from './components/Main';
 import Skill from './components/Skill';
 import Experience from './components/Experience';
+import Portfolio from './components/Portfolio';
+
 
 // css
+import "./App.css";
 import styled from "styled-components";
 
-const Wrap = styled.div`{padding:2rem}`
+const Wrap = styled.div`{padding:2rem}`;
+const Sidebar = styled.div`{width:30%}`;
 const anchors = ["Main", "Experience", "Skill"];
 
 function App() {
@@ -18,6 +22,17 @@ function App() {
 
   return (
     <Wrap className="wrap">
+      <Sidebar>
+        <h1>고은정</h1>
+        <ul>
+          <li>Home</li>
+          <li>About me</li>
+          <li>Portfolio</li>
+          <li>Resume</li>
+          <li>More</li>
+        </ul>
+      </Sidebar>
+
       <ReactFullpage
         licenseKey={'MY_KEY'}
         scrollingSpeed={1000} /* Options here */
@@ -43,6 +58,10 @@ function App() {
 
               <div className="section">
                 <Skill />
+              </div>
+
+              <div className="section">
+                <Portfolio />
               </div>
 
 
