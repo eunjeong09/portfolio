@@ -12,7 +12,7 @@ import "./App.css";
 import styled from "styled-components";
 
 const Wrap = styled.div`{padding:2rem}`;
-const Sidebar = styled.div`{width:30%}`;
+const Sidebar = styled.div`{width:30%;float:left}`;
 const anchors = ["Main", "Experience", "Skill"];
 
 function App() {
