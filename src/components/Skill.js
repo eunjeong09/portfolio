@@ -39,43 +39,51 @@ const StyledIndex = styled.div`
 	}
 `;
 
-let percent = 0;
-const per = percent * 3.6;
-let deg = 90;
 let color = PURPLE;
-if (per <= 180) {
-    deg += per;
-} else {
-    deg += per - 180;
-    color = PURPLE;
-}
-const backgroundImage = `
-    linear-gradient(${deg}deg, transparent 50%, ${color} 50%),
-    linear-gradient(90deg, ${GRAY} 50%, transparent 50%);
-  `;
 
+// const backgroundImage = `
+//     linear-gradient(${deg}deg, transparent 50%, ${color} 50%),
+//     linear-gradient(90deg, ${GRAY} 50%, transparent 50%);
+//   `;
+
+// %에 따라 채우는건 deg의 문제 -> 위에서 if문으로 deg의 값을 변경해주지만, 반영되지 않고있음
+
+let backgroundImage = ``;
+
+const renderBackgroundImage = (param) => {
+    let deg = 90;
+    let per = param * 3.6;
+    if (per <= 180) {
+        deg += per;
+    } else {
+        deg += per - 180;
+        color = PURPLE;
+    }
+
+    let backgroundImage = `
+        linear-gradient(${deg}deg, transparent 50%, ${color} 50%),
+        linear-gradient(90deg, ${GRAY} 50%, transparent 50%);
+    `;
+
+    return backgroundImage;
+
+}
 
 const renderSwitch = (param) => {
     switch (param) {
         case 'html':
-            percent = 90;
-            return 'HTML5';
+            return { skill: 'HTML5', percent: 90 };
         case 'css':
-            percent = 90;
-            return 'CSS3';
+            return { skill: 'CSS3', percent: 90 };
         case 'javascript':
-            percent = 70;
-            return 'JavaScript';
+            return { skill: 'JavaScript', percent: 70 };
         case 'react':
-            percent = 60;
-            return 'React';
+            return { skill: 'React', percent: 60 };
         case 'jquery':
-            percent = 80;
-            return 'jQuery';
+            return { skill: 'jQuery', percent: 80 };
         default:
             return '-';
     }
-
 }
 
 function Skill() {
@@ -85,50 +93,48 @@ function Skill() {
             <p>스킬을 애니메이션 넣어서 퍼센트로 표현하면 좋을듯</p>
             <div>
                 <SkillWrap>
-                    <StyledIndex backgroundImage={backgroundImage}>
+                    <StyledIndex backgroundImage={renderBackgroundImage(90)}>
                         <div className="circle">
                             <div className="inner-circle">
                                 <div className="per">
-                                    {/* <SkillText>{renderSwitch('html')}</SkillText> */}
-                                    <SkillText>{renderSwitch('html')}</SkillText>
-                                    {percent}%
-                                </div>
-                            </div>
-                        </div>
-                    </StyledIndex>
-                </SkillWrap>
-
-                <SkillWrap>
-                    <StyledIndex backgroundImage={backgroundImage}>
-                        <div className="circle">
-                            <div className="inner-circle">
-                                <div className="per">
-                                    <SkillText>{renderSwitch('css')}</SkillText>
-                                    {percent}%
+                                    <SkillText>{renderSwitch('html').skill}</SkillText>
+                                    {renderSwitch('html').percent}%
                                 </div>
                             </div>
                         </div>
                     </StyledIndex>
                 </SkillWrap>
                 <SkillWrap>
-                    <StyledIndex backgroundImage={backgroundImage}>
+                    <StyledIndex backgroundImage={renderBackgroundImage(90)}>
                         <div className="circle">
                             <div className="inner-circle">
                                 <div className="per">
-                                    <SkillText>{renderSwitch('javascript')}</SkillText>
-                                    {percent}%
+                                    <SkillText>{renderSwitch('css').skill}</SkillText>
+                                    {renderSwitch('css').percent}%
                                 </div>
                             </div>
                         </div>
                     </StyledIndex>
                 </SkillWrap>
                 <SkillWrap>
-                    <StyledIndex backgroundImage={backgroundImage}>
+                    <StyledIndex backgroundImage={renderBackgroundImage(70)}>
                         <div className="circle">
                             <div className="inner-circle">
                                 <div className="per">
-                                    <SkillText>{renderSwitch('react')}</SkillText>
-                                    {percent}%
+                                    <SkillText>{renderSwitch('javascript').skill}</SkillText>
+                                    {renderSwitch('javascript').percent}%
+                                </div>
+                            </div>
+                        </div>
+                    </StyledIndex>
+                </SkillWrap>
+                <SkillWrap>
+                    <StyledIndex backgroundImage={renderBackgroundImage(60)}>
+                        <div className="circle">
+                            <div className="inner-circle">
+                                <div className="per">
+                                    <SkillText>{renderSwitch('react').skill}</SkillText>
+                                    {renderSwitch('react').percent}%
                                 </div>
                             </div>
                         </div>
@@ -136,24 +142,24 @@ function Skill() {
 
                 </SkillWrap>
                 <SkillWrap>
-                    <StyledIndex backgroundImage={backgroundImage}>
+                    <StyledIndex backgroundImage={renderBackgroundImage(80)}>
                         <div className="circle">
                             <div className="inner-circle">
                                 <div className="per">
-                                    <SkillText>{renderSwitch('jquery')}</SkillText>
-                                    {percent}%
+                                    <SkillText>{renderSwitch('jquery').skill}</SkillText>
+                                    {renderSwitch('jquery').percent}%
                                 </div>
                             </div>
                         </div>
                     </StyledIndex>
                 </SkillWrap>
                 <SkillWrap>
-                    <StyledIndex backgroundImage={backgroundImage}>
+                    <StyledIndex backgroundImage={renderBackgroundImage(90)}>
                         <div className="circle">
                             <div className="inner-circle">
                                 <div className="per">
-                                    <SkillText>{renderSwitch('html')}</SkillText>
-                                    {percent}%
+                                    <SkillText>{renderSwitch('html').skill}</SkillText>
+                                    {renderSwitch('html').percent}%
                                 </div>
                             </div>
                         </div>
