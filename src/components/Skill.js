@@ -22,7 +22,6 @@ const StyledIndex = styled.div`
 		background-color: ${PURPLE};
 		background-image: ${({ backgroundImage }) => backgroundImage};
         margin-bottom:1rem;
-        animation: progress 3s linear infinite;
 	}
 	.inner-circle {
 		display: flex;
@@ -38,26 +37,11 @@ const StyledIndex = styled.div`
 		font-weight: 800;
 		color: ${PURPLE};
 	}
-    @keyframes progress {
-        0%{ background-position: 0px 0px;}
-        25%{ background-position: 0px -10px; }		
-        // 50%{ background-position: 0px -187px;}
-        // 75%{ background-position: 0px -290px;}
-        // 100%{ background-position: 0px -404px;}
-    }
-    
 
 `;
 
 
 let color = PURPLE;
-
-// const backgroundImage = `
-//     linear-gradient(${deg}deg, transparent 50%, ${color} 50%),
-//     linear-gradient(90deg, ${GRAY} 50%, transparent 50%);
-//   `;
-
-// %에 따라 채우는건 deg의 문제 -> 위에서 if문으로 deg의 값을 변경해주지만, 반영되지 않고있음
 
 let backgroundImage = ``;
 
