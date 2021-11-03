@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-const Circle = styled.div`{}`;
 const SkillWrap = styled.div`{width:30%;margin-left:10px;margin-right:10px;display:inline-block;float:left}`;
 const SkillText = styled.p`{font-size:20px;font-weight:bold;color:#6a00ff;text-align:center;margin:5px 0 0 0}`;
 

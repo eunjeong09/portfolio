@@ -13,6 +13,23 @@ import styled from "styled-components";
 
 const Wrap = styled.div`{padding:2rem}`;
 const Sidebar = styled.div`{width:30%;float:left}`;
+const Topbar = styled.div`{
+  width:100%;
+  border-bottom:2px solid black;
+  h1{
+    display:inline-block;
+    margin-right:2rem;
+  }
+  ul{
+    display: inline-block;
+  
+    li{
+      display:inline-block;
+      font-weight : bold;
+      padding : 20px;
+    }
+  } 
+}`;
 const anchors = ["Main", "Experience", "Skill"];
 
 function App() {
@@ -22,7 +39,7 @@ function App() {
 
   return (
     <Wrap className="wrap">
-      <Sidebar>
+      <Topbar>
         <h1>고은정</h1>
         <ul>
           <li>Home</li>
@@ -31,7 +48,7 @@ function App() {
           <li>Resume</li>
           <li>More</li>
         </ul>
-      </Sidebar>
+      </Topbar>
 
       <ReactFullpage
         licenseKey={'MY_KEY'}

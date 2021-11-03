@@ -5,15 +5,18 @@ const icons = {
     verticalAlign:"bottom"
 }
 const photo = {
-    width:"170px",
-    height:"150px"
+    width:"270px",
+    height:"250px"
 }
+
 function Main() {
     return (
         <div>
-            <p>어쩌구 저쩌구 프론트엔드 개발자 <h1>고은정</h1>입니다.</p>
+            <div style={{width:"50%",float:"left"}}>
+                <img style={photo} src={photoImage} />
+            </div>
+            <p>어쩌구 저쩌구 <br />프론트엔드 개발자 <strong>고은정</strong>입니다.</p>
             
-            <img style={photo} src={photoImage} />
             <p><FaChild style={icons}/> 1996.09.06</p>
             <p><FaPhoneAlt style={icons}/> 010-9985-6676</p>
             <p><FaEnvelope style={icons}/> ejko0911@gmail.com</p>
