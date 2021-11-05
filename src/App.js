@@ -15,6 +15,8 @@ const Wrap = styled.div`{padding:2rem}`;
 const Sidebar = styled.div`{width:30%;float:left}`;
 const Topbar = styled.div`{
   width:100%;
+  background-color:#fff;
+  opacity:50;
   border-bottom:2px solid black;
   h1{
     display:inline-block;
@@ -45,6 +47,7 @@ function App() {
           <li>Home</li>
           <li>About me</li>
           <li>Portfolio</li>
+          <li>Project</li>
           <li>Resume</li>
           <li>More</li>
         </ul>
