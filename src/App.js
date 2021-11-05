@@ -4,6 +4,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Main from './components/Main';
 import Skill from './components/Skill';
 import Experience from './components/Experience';
+import ExperienceCopy from './components/Experience copy';
 import Portfolio from './components/Portfolio';
 
 
@@ -13,11 +14,38 @@ import styled from "styled-components";
 
 const Wrap = styled.div`{padding:2rem}`;
 const Sidebar = styled.div`{width:30%;float:left}`;
+const Logo = styled.div`{
+  display:inline-block;
+  .circle{
+    width:150px;
+    height:150px;
+    background:yellow;
+    border-radius:150px;
+    // position:absolute;
+    // top:0;
+    // left:0;
+    // display:inline-block;
+
+  }
+}`;
 const Topbar = styled.div`{
-  width:100%;
-  background-color:#fff;
-  opacity:50;
-  border-bottom:2px solid black;
+  width:80%;
+  display:inline-block;
+  float:right;  
+  // background-color:#fff;
+  // opacity:50;
+  // border-bottom:2px solid black;
+  position:relative;
+  &:after{
+    content:'';
+    width:85%;
+    height:2px;
+    position:absolute;
+    background:purple;
+    right:0;
+    bottom:0;
+
+  }
   h1{
     display:inline-block;
     margin-right:2rem;
@@ -41,8 +69,12 @@ function App() {
 
   return (
     <Wrap className="wrap">
+      <Logo>
+          <div className="circle"></div>
+
+      </Logo>
       <Topbar>
-        <h1>고은정</h1>
+        {/* <h1>고은정</h1> */}
         <ul>
           <li>Home</li>
           <li>About me</li>
@@ -74,6 +106,10 @@ function App() {
 
               <div className="section">
                 <Experience />
+              </div>
+              
+              <div className="section">
+                <ExperienceCopy />
               </div>
 
               <div className="section">

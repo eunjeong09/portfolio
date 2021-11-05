@@ -3,3 +3,6 @@
     float: right; */
     padding: 2rem;
 }
+.fp-tableCell{
+    vertical-align: top;
+}
