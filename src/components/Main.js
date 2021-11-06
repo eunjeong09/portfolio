@@ -4,17 +4,30 @@ import photoImage from '../images/eunjeong.png';
 const icons = {
     verticalAlign:"bottom"
 }
-const photo = {
-    width:"300px",
-    height:"260px"
-}
+const Photo = styled.div`
+    // width:"300px";
+    // height:"260px";
+    border: 3px solid #000;
+    border-radius:50%;
+    background-image: url(${photoImage});
+    width: 300px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+`;
 
 function Main() {
     return (
         <div>
-            <div style={{width:"50%",float:"left"}}>
+            {/* <div style={{width:"50%",float:"left"}}>
                 <img style={photo} src={photoImage} />
-            </div>
+            </div> */}
+
+            {/* <div style={{backgroundImage: `url(${require("../images/eunjeong.png").default})`}}></div> */}
+
+            <Photo></Photo>
+
             <p>어쩌구 저쩌구 <br />프론트엔드 개발자 <strong>고은정</strong>입니다.</p>
             
             <div>

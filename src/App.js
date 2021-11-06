@@ -76,7 +76,6 @@ function App() {
       <Topbar>
         {/* <h1>고은정</h1> */}
         <ul>
-          <li>Home</li>
           <li>About me</li>
           <li>Portfolio</li>
           <li>Project</li>

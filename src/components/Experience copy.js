@@ -28,6 +28,18 @@ const List = styled.div`{
         display:inline-block;
         float:left;
         margin-bottom:5px;
+        ul{
+            list-style-type:none;
+        }
+        li{
+            position:relative;
+            padding-left:10px;
+        }
+        li:before{
+            position:absolute;
+            content:'-';
+            text-indent: -1em;
+        }
     }
 }`;
 
