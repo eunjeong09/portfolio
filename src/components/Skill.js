@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import CircularProgress from "./CircularProgress";
 const SkillWrap = styled.div`{width:30%;margin-left:10px;margin-right:10px;display:inline-block;float:left}`;
 const SkillText = styled.p`{font-size:20px;font-weight:bold;color:#6a00ff;text-align:center;margin:5px 0 0 0}`;
 
@@ -86,7 +86,7 @@ function Skill() {
             <h1>Skill</h1>
             <p>스킬을 애니메이션 넣어서 퍼센트로 표현하면 좋을듯</p>
             <div>
-                <SkillWrap>
+                {/* <SkillWrap>
                     <StyledIndex backgroundImage={renderBackgroundImage(90)}>
                         <div className="circle">
                             <div className="inner-circle">
@@ -158,7 +158,20 @@ function Skill() {
                             </div>
                         </div>
                     </StyledIndex>
-                </SkillWrap>
+                </SkillWrap> */}
+                <CircularProgress
+                    language="HTML"
+                    size={250}
+                    strokeWidth={20}
+                    percentage={95}
+                    color="purple"
+                />
+                {/* <CircularProgress
+                    size={250}
+                    strokeWidth={20}
+                    percentage={100}
+                    color="purple"
+                /> */}
             </div>
         </div>
     )
