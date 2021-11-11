@@ -160,18 +160,40 @@ function Skill() {
                     </StyledIndex>
                 </SkillWrap> */}
                 <CircularProgress
-                    language="HTML"
+                    language="HTML5"
                     size={250}
                     strokeWidth={20}
-                    percentage={95}
-                    color="purple"
+                    percentage={90}
+                    color="#e54e21"
                 />
-                {/* <CircularProgress
+                <CircularProgress
+                    language="CSS3"
                     size={250}
                     strokeWidth={20}
-                    percentage={100}
-                    color="purple"
-                /> */}
+                    percentage={90}
+                    color="#0d73b7"
+                />
+                <CircularProgress
+                    language="JavaScript"
+                    size={250}
+                    strokeWidth={20}
+                    percentage={70}
+                    color="#e6a323"
+                />
+                <CircularProgress
+                    language="React"
+                    size={250}
+                    strokeWidth={20}
+                    percentage={60}
+                    color="#00dcff"
+                />
+                <CircularProgress
+                    language="jQuery"
+                    size={250}
+                    strokeWidth={20}
+                    percentage={70}
+                    color="#1169ae"
+                />
             </div>
         </div>
     )

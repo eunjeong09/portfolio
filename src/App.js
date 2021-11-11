@@ -3,7 +3,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 // components
 import Main from './components/Main';
 import Skill from './components/Skill';
-import Experience from './components/Experience';
+// import Experience from './components/Experience';
 import ExperienceCopy from './components/Experience copy';
 import Portfolio from './components/Portfolio';
 
@@ -103,9 +103,9 @@ function App() {
               </button> */}
               </div>
 
-              <div className="section">
+              {/* <div className="section">
                 <Experience />
-              </div>
+              </div> */}
               
               <div className="section">
                 <ExperienceCopy />

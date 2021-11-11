@@ -15,7 +15,7 @@ const CircularProgress = ({ language, size, strokeWidth, percentage, color }) =>
   const dash = (progress * circumference) / 100;
 
   return (
-    <svg width={size} height={size} viewBox={viewBox}>
+    <svg style={{margin:"1rem"}} width={size} height={size} viewBox={viewBox}>
       <circle
         fill="none"
         stroke="#ccc"
