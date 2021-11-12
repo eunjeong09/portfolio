@@ -65,6 +65,7 @@ const anchors = ["Main", "Experience", "Skill"];
 function App() {
   useEffect(() => {
     document.title = "Portfolio";
+    
   }, []);
 
   return (
@@ -90,9 +91,12 @@ function App() {
         anchors={anchors}
         navigation
         navigationTooltips={anchors}
+        
 
 
         render={({ state, fullpageApi }) => {
+          // console.log("state : "+JSON.stringify(state));
+
           return (
             <ReactFullpage.Wrapper>
               <div className="section">
@@ -111,6 +115,7 @@ function App() {
                 <ExperienceCopy />
               </div>
 
+              {/* active 체크해서 setState */}
               <div className="section">
                 <Skill />
               </div>

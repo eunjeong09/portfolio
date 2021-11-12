@@ -5,7 +5,6 @@ const CircularProgress = ({ language, size, strokeWidth, percentage, color }) =>
 //   const [language, setLanguage] = useState('');
   useEffect(() => {
     setProgress(percentage);
-    console.log("useEffect");
     // setLanguage(language);
 //   }, [percentage]);
   },[]);
@@ -34,7 +33,7 @@ const CircularProgress = ({ language, size, strokeWidth, percentage, color }) =>
         transform={`rotate(-90 ${size / 2} ${size / 2})`}
         strokeDasharray={[dash, circumference - dash]}
         strokeLinecap="round"
-        style={{ transition: "all 0.5s" }}
+        style={{ transition: "all 2s" }}
       />
       <text
         // fill="black"
