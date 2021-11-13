@@ -10,10 +10,11 @@ const Photo = styled.div`
     border: 3px solid #000;
     border-radius:50%;
     background-image: url(${photoImage});
-    width: 300px;
+    width: 260px;
     height: 260px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:right;
 
 `;
 
