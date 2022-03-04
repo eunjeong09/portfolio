@@ -5,8 +5,6 @@ const icons = {
     verticalAlign:"bottom"
 }
 const Photo = styled.div`
-    // width:"300px";
-    // height:"260px";
     border: 3px solid #000;
     border-radius:50%;
     background-image: url(${photoImage});
@@ -15,7 +13,6 @@ const Photo = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position:right;
-
 `;
 
 function Main() {
