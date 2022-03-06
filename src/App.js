@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 // components
-import Main from './renewal/Home';
+import Home from './renewal/Home';
+import AboutMe from './renewal/AboutMe';
+import Experience from './renewal/Experience';
 
 import './css/style.css';
 import styled from "styled-components";
@@ -23,11 +25,6 @@ const Header = styled.div`{
 const anchors = ["Main", "Experience", "Skill"];
 
 function App() {
-  useEffect(() => {
-    document.title = "Eunjeong";
-
-  }, []);
-
   return (
     <Wrap>
       <Header className='header'>
@@ -55,7 +52,15 @@ function App() {
           return (
             <ReactFullpage.Wrapper>
               <div className="section">
-                <Main />
+                <Home />
+              </div>
+
+              <div className="section">
+                <AboutMe />
+              </div>
+
+              <div className="section">
+                <Experience />
               </div>
 
             </ReactFullpage.Wrapper>

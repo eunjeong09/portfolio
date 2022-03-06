@@ -2,9 +2,21 @@
     font-family: 'NotoSans';
     src: url(../font/NotoSansKR-Regular.otf);
 }
+@font-face {
+    font-family: 'NotoSans-bold';
+    src: url(../font/NotoSansKR-Bold.otf);
+}
 html{
     font-family: 'NotoSans';
 }
-#fullpage{
-    padding: 2rem;
+#home{
+    h2{
+        letter-spacing: 10px;
+    }
+    h3{
+        letter-spacing: 5px;
+        b{
+            font-family: 'NotoSans-bold';
+        }
+    }
 }

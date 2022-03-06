@@ -3,9 +3,24 @@
   src: url(../font/NotoSansKR-Regular.otf);
 }
 
+@font-face {
+  font-family: 'NotoSans-bold';
+  src: url(../font/NotoSansKR-Bold.otf);
+}
+
 html {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
   font-family: 'NotoSans';
 }
+
+#home h2 {
+  letter-spacing: 10px;
+}
+
+#home h3 {
+  letter-spacing: 5px;
+}
+
+#home h3 b {
+  font-family: 'NotoSans-bold';
+}
+/*# sourceMappingURL=style.css.map */
