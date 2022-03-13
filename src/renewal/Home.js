@@ -1,4 +1,4 @@
-import { FaGithub, FaVimeoV, FaMouse } from 'react-icons/fa';
+import { FaGithub, FaVimeoV, FaRegIdCard, FaMouse } from 'react-icons/fa';
 import styled from 'styled-components';
 import myImage from '../images/photo.jpg';
 
@@ -10,6 +10,7 @@ const Photo = styled.div`
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
+    margin: 0 auto;
 `;
 
 function Home() {
@@ -22,9 +23,10 @@ function Home() {
                 {/* 깃, 벨로그,  */}
                 <FaGithub />
                 <FaVimeoV />
+                <FaRegIdCard />
             </div>
 
-            <div>
+            <div className="scroll">
                 <FaMouse />
                 <p>Scroll Down</p>
             </div>

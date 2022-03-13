@@ -1,22 +1,63 @@
 @font-face {
-    font-family: 'NotoSans';
+    font-family: "NotoSans";
     src: url(../font/NotoSansKR-Regular.otf);
 }
 @font-face {
-    font-family: 'NotoSans-bold';
+    font-family: "NotoSans-bold";
     src: url(../font/NotoSansKR-Bold.otf);
 }
-html{
-    font-family: 'NotoSans';
+html {
+    font-family: "NotoSans";
 }
-#home{
-    h2{
+#home {
+    position: relative;
+    transform: translateY(-30%);
+    text-align: center;
+    h2 {
         letter-spacing: 10px;
     }
-    h3{
+    h3 {
         letter-spacing: 5px;
-        b{
-            font-family: 'NotoSans-bold';
+        b {
+            font-family: "NotoSans-bold";
         }
+    }
+    .iconList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        * {
+            margin: 0px 10px;
+        }
+    }
+    .scroll {
+        position: absolute;
+        left: 50%;
+        bottom: -30%;
+        transform: translate(-50%, 0px);
+        p{
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 100px;
+            left: 50%;
+            transform: translate(-50%, 55px);
+            animation-duration: 2.5s;
+            animation-name: scrollDown;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes scrollDown {
+    0%{
+        transform: translate(-50%, 70px);
+    }
+    50%{
+        transform: translate(-50%, 55px);
+    }
+    100%{
+        transform: translate(-50%, 70px);
     }
 }

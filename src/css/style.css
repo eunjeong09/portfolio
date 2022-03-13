@@ -1,15 +1,22 @@
 @font-face {
-  font-family: 'NotoSans';
+  font-family: "NotoSans";
   src: url(../font/NotoSansKR-Regular.otf);
 }
 
 @font-face {
-  font-family: 'NotoSans-bold';
+  font-family: "NotoSans-bold";
   src: url(../font/NotoSansKR-Bold.otf);
 }
 
 html {
-  font-family: 'NotoSans';
+  font-family: "NotoSans";
+}
+
+#home {
+  position: relative;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  text-align: center;
 }
 
 #home h2 {
@@ -21,6 +28,77 @@ html {
 }
 
 #home h3 b {
-  font-family: 'NotoSans-bold';
+  font-family: "NotoSans-bold";
+}
+
+#home .iconList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+#home .iconList * {
+  margin: 0px 10px;
+}
+
+#home .scroll {
+  position: absolute;
+  left: 50%;
+  bottom: -30%;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+}
+
+#home .scroll p {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 55px);
+          transform: translate(-50%, 55px);
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-name: scrollDown;
+          animation-name: scrollDown;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    -webkit-transform: translate(-50%, 70px);
+            transform: translate(-50%, 70px);
+  }
+  50% {
+    -webkit-transform: translate(-50%, 55px);
+            transform: translate(-50%, 55px);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 70px);
+            transform: translate(-50%, 70px);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    -webkit-transform: translate(-50%, 70px);
+            transform: translate(-50%, 70px);
+  }
+  50% {
+    -webkit-transform: translate(-50%, 55px);
+            transform: translate(-50%, 55px);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 70px);
+            transform: translate(-50%, 70px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
