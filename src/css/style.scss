@@ -9,6 +9,20 @@
 html {
     font-family: "NotoSans";
 }
+html *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h2{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+// Home
 #home {
     position: relative;
     transform: translateY(-30%);
@@ -60,4 +74,30 @@ html {
     100%{
         transform: translate(-50%, 70px);
     }
+}
+
+// Skill
+#skill{
+    width: 70%;
+    margin: 0 auto;
+    .skills{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .skill{
+        position: relative;
+        img{
+            width: 180px;
+        }
+        p{
+            position: absolute;
+            left: 50%;
+            top: 49%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+    
 }

@@ -12,6 +12,20 @@ html {
   font-family: "NotoSans";
 }
 
+html * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 #home {
   position: relative;
   -webkit-transform: translateY(-30%);
@@ -100,5 +114,38 @@ html {
     -webkit-transform: translate(-50%, 70px);
             transform: translate(-50%, 70px);
   }
+}
+
+#skill {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#skill .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#skill .skill {
+  position: relative;
+}
+
+#skill .skill img {
+  width: 180px;
+}
+
+#skill .skill p {
+  position: absolute;
+  left: 50%;
+  top: 49%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */

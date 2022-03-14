@@ -5,6 +5,8 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Home from './renewal/Home';
 import AboutMe from './renewal/AboutMe';
 import Experience from './renewal/Experience';
+import Skill from './renewal/Skill';
+
 
 import './css/style.css';
 import styled from "styled-components";
@@ -31,10 +33,8 @@ function App() {
         <ul>
           <li>Home</li>
           <li>About me</li>
-          <li>Portfolio</li>
-          <li>Project</li>
-          <li>Resume</li>
-          <li>More</li>
+          <li>Experience</li>
+          <li>Skill</li>
         </ul>
       </Header>
 
@@ -61,6 +61,10 @@ function App() {
 
               <div className="section">
                 <Experience />
+              </div>
+
+              <div className="section">
+                <Skill />
               </div>
 
             </ReactFullpage.Wrapper>
