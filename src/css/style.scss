@@ -29,8 +29,12 @@ h2{
     text-align: center;
     h2 {
         letter-spacing: 10px;
+        position: inherit;
+        left: 0;
+        margin-top: 10px;
     }
     h3 {
+        margin-top: 10px;
         letter-spacing: 5px;
         b {
             font-family: "NotoSans-bold";
@@ -41,6 +45,7 @@ h2{
         justify-content: center;
         align-items: center;
         font-size: 30px;
+        margin-top: 10px;
         * {
             margin: 0px 10px;
         }
@@ -75,6 +80,25 @@ h2{
         transform: translate(-50%, 70px);
     }
 }
+
+// Experience
+#experience .wrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.left{
+    width: 50%;
+    display: inline-block;
+}
+.right{
+    width: 50%;
+    display: inline-block;
+    float: right;
+}
+
 
 // Skill
 #skill{
