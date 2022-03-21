@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
 function Experience() {
+    const Title = styled.p`{
+        font-weight:bold;
+        font-size:18px;
+        display:inline-block;
+        margin-right:10px;
+    }`
     const Date = styled.p`{
         letter-spacing: 5px;
         color: #ddd;
-        font-size:14px
+        font-size:14px;
+        margin-bottom:20px;
+        display:inline-block;
     }`;
-    const Title = styled.p`{
-        font-weight:bold;
-        font-size:18px
-    }`
 
     return (
         <div id="experience">
