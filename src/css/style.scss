@@ -21,6 +21,19 @@ h2{
     font-size: 30px;
     font-weight: bold;
 }
+.dash>li{
+    position: relative;
+    padding-left: 10px;
+}
+.dash>li::before{
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    width: 6px;
+    height: 1px;
+    background-color: #333;
+    content: '';
+}
 
 // Home
 #home {
