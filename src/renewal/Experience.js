@@ -6,13 +6,13 @@ function Experience() {
         font-size:18px;
         display:inline-block;
         margin-right:10px;
+        letter-spacing: 4.5px;
     }`
     const Date = styled.p`{
         letter-spacing: 5px;
         color: #ddd;
         font-size:14px;
-        margin-bottom:20px;
-        
+        margin-bottom:10px;
     }`;
 
     return (
@@ -21,7 +21,7 @@ function Experience() {
             <div className="wrap">
                 <div className="left">
                     <ul>
-                        <li>
+                        <li className="bottom20">
                             <Title>대전대학교 <br />회계학과, 전자정보통신공학과 졸업</Title>
                             <Date>2015.03 ~ 2019.02</Date>
                             <div className="list">
@@ -32,7 +32,7 @@ function Experience() {
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <li className="bottom20">
                             <Title>(주)플랜아이 퍼블리셔 인턴 및 수습</Title>
                             <Date>2018.08 ~ 2019.03</Date>
                             <div className="list">
@@ -44,7 +44,7 @@ function Experience() {
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <li className="bottom20">
                             <Title>대전 인재개발원 <br />전자정보통신sw프레임워크 과정 수료</Title>
                             <Date>2019.05 ~ 2019.12</Date>
                             <div className="list">
@@ -58,7 +58,7 @@ function Experience() {
                 </div>
                 <div className="right">
                     <ul>
-                        <li>
+                        <li className="bottom20">
                             <Title>(주)마루이엔지 프론트엔드 개발자</Title>
                             <Date>2020.02 ~ 2021.07</Date>
                             <div className="list">
@@ -68,7 +68,7 @@ function Experience() {
                                 </ul>
                             </div>
                         </li>
-                        <li>
+                        <li className="bottom20">
                             <Title>(주)버즈비터즈 리뉴얼 인턴</Title>
                             <Date>2022.01 ~ 2022.02</Date>
                             <div className="list">

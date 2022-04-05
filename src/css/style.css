@@ -26,6 +26,10 @@ h2 {
   font-weight: bold;
 }
 
+.bottom20 {
+  margin-bottom: 20px;
+}
+
 .dash > li {
   position: relative;
   padding-left: 10px;
