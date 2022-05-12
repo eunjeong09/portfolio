@@ -21,9 +21,9 @@ function Home() {
             <h3><b>성장하는</b> 프론트엔드 개발자입니다.</h3>
             <div className="iconList">
                 {/* 깃, 벨로그,  */}
+                <FaRegIdCard />
                 <FaGithub />
                 <FaVimeoV />
-                <FaRegIdCard />
             </div>
 
             <div className="scroll">
