@@ -5,6 +5,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Home from './renewal/Home';
 import AboutMe from './renewal/AboutMe';
 import Experience from './renewal/Experience';
+import RecentWorks from './renewal/RecentWorks';
 import Skill from './renewal/Skill';
 
 
@@ -61,6 +62,10 @@ function App() {
 
               <div className="section">
                 <Experience />
+              </div>
+
+              <div className="section">
+                <RecentWorks />
               </div>
 
               <div className="section">
