@@ -17,11 +17,23 @@ function AboutMe(){
             <h2>About Me</h2>
             <div className="leftArea">
                 <Photo />
-                <img src="../images/photo.jpg"/>
             </div>
             <div className="rightArea">
-                <div className="box">
-                    간단한 설명?
+                <div className="bubble">
+                    ------프론트엔드 개발자입니다.<br/>
+                    --<br/>
+                    --<br/>
+                    --<br/>
+                </div>
+            </div>
+            <div className='flexBox'>
+                <div>
+                    <p>Phone</p>   
+                    <span>010-9985-6676</span>
+                </div>
+                <div>
+                    <p>Email</p>
+                    <span>ejko0911@gmail.com</span>
                 </div>
             </div>
         </div>

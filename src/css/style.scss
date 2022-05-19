@@ -24,6 +24,11 @@ h2{
 .bottom20{
     margin-bottom: 20px;
 }
+.flexBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .dash>li{
     position: relative;
     padding-left: 10px;
@@ -36,6 +41,16 @@ h2{
     height: 1px;
     background-color: #333;
     content: '';
+}
+.leftArea{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.rightArea{
+    // width: 50%;
+    display: inline-block;
+    // float: right;
 }
 
 // Home
@@ -96,6 +111,16 @@ h2{
     100%{
         transform: translate(-50%, 70px);
     }
+}
+
+// About Me
+.aboutMe{
+    width: 70%;
+    margin: 0 auto;
+}
+.aboutMe .leftArea{
+    width: 20%;
+    margin-right: 20px;
 }
 
 // Experience

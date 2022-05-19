@@ -69,7 +69,7 @@ function Experience() {
                             </div>
                         </li>
                         <li className="bottom20">
-                            <Title>(주)버즈비터즈 리뉴얼 인턴</Title>
+                            <Title>(주)버즈비터즈 프론트엔드 개발자</Title>
                             <Date>2022.01 ~ 2022.02</Date>
                             <div className="list">
                                 <ul className="dash">
