@@ -5,7 +5,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Home from './renewal/Home';
 import AboutMe from './renewal/AboutMe';
 import Experience from './renewal/Experience';
-import RecentWorks from './renewal/RecentWorks';
+import Develop from './renewal/DevelopMe';
 import Skill from './renewal/Skill';
 
 
@@ -65,7 +65,7 @@ function App() {
               </div>
 
               <div className="section">
-                <RecentWorks />
+                <Develop />
               </div>
 
               <div className="section">
