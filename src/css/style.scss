@@ -9,50 +9,69 @@
 html {
     font-family: "NotoSans";
 }
-html *{
+html * {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-h2{
+h2 {
     position: absolute;
     top: 5%;
     left: 5%;
     font-size: 30px;
     font-weight: bold;
 }
-.bottom20{
+.bottom20 {
     margin-bottom: 20px;
 }
-.flexBox{
+.flexBox {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.dash>li{
+.dash > li {
     position: relative;
     padding-left: 10px;
 }
-.dash>li::before{
+.dash > li::before {
     position: absolute;
     left: 0px;
     top: 12px;
     width: 6px;
     height: 1px;
     background-color: #333;
-    content: '';
+    content: "";
 }
-.leftArea{
+.leftArea {
     width: 50%;
     display: inline-block;
     float: left;
 }
-.rightArea{
-    // width: 50%;
+.rightArea {
     display: inline-block;
-    // float: right;
 }
-
+// 말풍선 - 왼쪽
+.bubble {
+    position: relative;
+    margin: 30px;
+    padding: 10px 20px;
+    width: 400px;
+    height: 100px;
+    background: #eee;
+    border-radius: 10px;
+    border-color: #eee;
+    box-shadow:2px 2px 2px 2px rgba($color: #000000, $alpha: 0.5);
+}
+.bubble:after {
+    border-top: 15px solid #eee;
+    border-left: 15px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -15px;
+}
 // Home
 #home {
     position: relative;
@@ -87,7 +106,7 @@ h2{
         left: 50%;
         bottom: -30%;
         transform: translate(-50%, 0px);
-        p{
+        p {
             position: absolute;
             bottom: 0;
             display: block;
@@ -102,61 +121,60 @@ h2{
 }
 
 @keyframes scrollDown {
-    0%{
+    0% {
         transform: translate(-50%, 70px);
     }
-    50%{
+    50% {
         transform: translate(-50%, 55px);
     }
-    100%{
+    100% {
         transform: translate(-50%, 70px);
     }
 }
 
 // About Me
-.aboutMe{
+.aboutMe {
     width: 70%;
     margin: 0 auto;
 }
-.aboutMe .leftArea{
+.aboutMe .leftArea {
     width: 20%;
     margin-right: 20px;
 }
 
 // Experience
-#experience .wrap{
+#experience .wrap {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
 }
-.left{
+.left {
     width: 50%;
     display: inline-block;
 }
-.right{
+.right {
     width: 50%;
     display: inline-block;
     float: right;
 }
 
-
 // Skill
-#skill{
+#skill {
     width: 70%;
     margin: 0 auto;
-    .skills{
+    .skills {
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px;
     }
-    .skill{
+    .skill {
         position: relative;
-        img{
+        img {
             width: 180px;
         }
-        p{
+        p {
             position: absolute;
             left: 50%;
             top: 49%;
@@ -165,5 +183,4 @@ h2{
             font-size: 24px;
         }
     }
-    
 }

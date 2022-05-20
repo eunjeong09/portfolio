@@ -1,3 +1,4 @@
+import { FaGithub, FaRegIdCard, FaPhoneAlt, FaRegEnvelope} from 'react-icons/fa';
 import styled from 'styled-components';
 import myImage from '../images/photo.jpg';
 
@@ -28,12 +29,20 @@ function AboutMe(){
             </div>
             <div className='flexBox'>
                 <div>
-                    <p>Phone</p>   
+                    <p><FaPhoneAlt /></p>   
                     <span>010-9985-6676</span>
                 </div>
                 <div>
-                    <p>Email</p>
+                    <p><FaRegEnvelope /></p>
                     <span>ejko0911@gmail.com</span>
+                </div>
+                <div>
+                    <p><FaRegIdCard /></p>
+                    <span>Notion</span>
+                </div>
+                <div>
+                    <p><FaGithub /></p>
+                    <span>GitHub</span>
                 </div>
             </div>
         </div>

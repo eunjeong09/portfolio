@@ -1,4 +1,4 @@
-import { FaGithub, FaVimeoV, FaRegIdCard, FaMouse } from 'react-icons/fa';
+import {FaMouse } from 'react-icons/fa';
 import styled from 'styled-components';
 import myImage from '../images/photo.jpg';
 
@@ -21,9 +21,7 @@ function Home() {
             <h3><b>성장하는</b> 프론트엔드 개발자입니다.</h3>
             <div className="iconList">
                 {/* 깃, 벨로그,  */}
-                <FaRegIdCard />
-                <FaGithub />
-                <FaVimeoV />
+                {/* <FaVimeoV /> */}
             </div>
 
             <div className="scroll">
