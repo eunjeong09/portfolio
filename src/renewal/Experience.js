@@ -37,10 +37,23 @@ function Experience() {
                             <Date>2018.08 ~ 2019.03</Date>
                             <div className="list">
                                 <ul className="dash">
-                                    <li>국가기술원 웹진</li>
+                                    퍼블리싱
                                     <li>한국정직운동본부</li>
-                                    <li>대전대학교 산학협력단</li>
-                                    <li>약 15개 프로젝트 보조</li>
+                                    <li>대전대학교 Living Lab</li>
+                                    <li>KOBIC</li>
+                                    <li>국가기록원 웹진</li>
+                                    <li>센텀병원</li>
+                                    <li>탄탄병원</li>
+                                    <li>원자력발전소</li>
+                                    <li>청소년 정책연구원</li>
+                                    <li>에코프로</li>
+                                </ul>
+                                <ul className="dash">
+                                    웹 접근성 체크리스트 작성 및 수정
+                                    <li>한국 건설기술 연구원</li>
+                                    <li>한국 한의학 연구원</li>
+                                    <li>에너지기술 연구원</li>
+                                    <li>보건산업 진흥원</li>
                                 </ul>
                             </div>
                         </li>
