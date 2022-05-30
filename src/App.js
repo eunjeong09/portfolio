@@ -7,6 +7,7 @@ import AboutMe from './renewal/AboutMe';
 import Experience from './renewal/Experience';
 import Develop from './renewal/DevelopMe';
 import Skill from './renewal/Skill';
+import Touch from './renewal/Touch';
 
 
 import './css/style.css';
@@ -70,6 +71,10 @@ function App() {
 
               <div className="section">
                 <Skill />
+              </div>
+
+              <div className='section'>
+                <Touch />
               </div>
 
             </ReactFullpage.Wrapper>
