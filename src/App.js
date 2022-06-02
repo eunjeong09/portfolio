@@ -24,19 +24,31 @@ const Header = styled.div`{
     display:inline-block;
     font-weight : bold;
     padding : 20px;
-  } 
+    z-index:999; 
+    cursor:pointer;
+  };
+  
 }`;
-const anchors = ["Main", "Experience", "Skill"];
+// const anchors = ["Main", "Experience", "Skill"];
+const anchors = ["Home", "Aboutme", "Experience", "Develop", "Skill", "Get In Touch"];
 
 function App() {
+  function goPage(e){
+    console.log("target---");
+    console.log(e.target);
+    console.log(e.currentTarget);
+
+  }
   return (
     <Wrap>
-      <Header className='header'>
-        <ul>
-          <li>Home</li>
+      <Header>
+        <ul onClick={goPage}>
+          <li><a href='#homeArea'>Home</a></li>
           <li>About me</li>
           <li>Experience</li>
+          <li>Develop</li>
           <li>Skill</li>
+          <li>Get In Touch</li>
         </ul>
       </Header>
 
@@ -44,8 +56,8 @@ function App() {
         licenseKey={'MY_KEY'}
         scrollingSpeed={1000} /* Options here */
         anchors={anchors}
-        navigation
-        navigationTooltips={anchors}
+        navigation={true}
+        // navigationTooltips={anchors}
 
 
 
@@ -53,11 +65,11 @@ function App() {
 
           return (
             <ReactFullpage.Wrapper>
-              <div className="section">
+              <div className="section" id='homeArea'>
                 <Home />
               </div>
 
-              <div className="section">
+              <div className="section" id='AboutArea'>
                 <AboutMe />
               </div>
 

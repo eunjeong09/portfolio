@@ -31,6 +31,7 @@ function Touch(){
                 연락 받기? - 카톡으로 보내기 구현
                 <button>Submit</button>
             </div>
+            <p className='star'>입력하신 내용은 카카오톡 메세지로 전달됩니다. <br/>자유로운 의견을 남겨주세요😊</p>
         </div>
     )
 }
