@@ -18,37 +18,47 @@ const Wrap = styled.div`{
 }`
 
 const Header = styled.div`{
+  position:fixed;
+  right:20px;
+  background-color:#fff;
+  z-index:999; 
   display: flex;
   justify-content: right;
   li{
     display:inline-block;
     font-weight : bold;
     padding : 20px;
-    z-index:999; 
     cursor:pointer;
   };
   
 }`;
-// const anchors = ["Main", "Experience", "Skill"];
-const anchors = ["Home", "Aboutme", "Experience", "Develop", "Skill", "GetInTouch"];
+const anchors = ["homeArea", "aboutmeArea", "experienceArea", "developArea", "skillArea", "touchArea"];
 
 function App() {
-  function goPage(e){
-    console.log("target---");
+  function goPage(e) {
+    console.log("goPage");
     console.log(e.target);
     console.log(e.currentTarget);
-
   }
+
+  function clickLi() {
+    console.log('li');
+  }
+
+  function clickA() {
+    console.log("a");
+  }
+
   return (
     <Wrap>
       <Header>
-        <ul onClick={goPage}>
+        <ul>
           <li><a href='#homeArea'>Home</a></li>
-          <li>About me</li>
-          <li>Experience</li>
-          <li>Develop</li>
-          <li>Skill</li>
-          <li>Get In Touch</li>
+          <li><a href='#aboutmeArea'>About me</a></li>
+          <li><a href='#experienceArea'>Experience</a></li>
+          <li><a href='#developArea'>Develop</a></li>
+          <li><a href='#skillArea'>Skill</a></li>
+          <li><a href='#touchArea'>Get In Touch</a></li>
         </ul>
       </Header>
 
@@ -57,19 +67,16 @@ function App() {
         scrollingSpeed={1000} /* Options here */
         anchors={anchors}
         navigation={true}
-        // navigationTooltips={anchors}
-
-
+        scrollBar={true}
 
         render={({ state, fullpageApi }) => {
-
           return (
             <ReactFullpage.Wrapper>
-              <div className="section" id='homeArea'>
+              <div className="section">
                 <Home />
               </div>
 
-              <div className="section" id='AboutArea'>
+              <div className="section">
                 <AboutMe />
               </div>
 
@@ -85,7 +92,7 @@ function App() {
                 <Skill />
               </div>
 
-              <div className='section'>
+              <div className="section">
                 <Touch />
               </div>
 
@@ -96,5 +103,4 @@ function App() {
     </Wrap>
   );
 }
-
 export default App;
