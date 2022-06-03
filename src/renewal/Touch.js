@@ -1,6 +1,9 @@
 import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt} from 'react-icons/fa';
 
 function Touch(){
+    function sendComment(){
+        console.log("sendComment");
+    }
     return(
         <div id='touch'>
             <h2>Get In Touch</h2>
@@ -16,7 +19,8 @@ function Touch(){
                     <div><FaRegEnvelope /></div>
                     <p>EMAIL</p>
                     <span>
-                        ejko0911@gmail.com
+                        <a style={{padding:'20px'}} href='mailto:ejko0911@gmail.com'>ejko0911@gmail.com</a>
+                        
                     </span>
                 </div>
                 <div className="touchBox">
@@ -27,11 +31,13 @@ function Touch(){
                     </span>
                 </div>
             </div>
-            <div>
-                연락 받기? - 카톡으로 보내기 구현
-                <button>Submit</button>
+            <div className='commentArea'>
+                <h3>Comment</h3>
+                <p className='star'>입력하신 내용은 카카오톡 메세지로 전달됩니다. <br/>자유로운 의견을 남겨주세요😊</p>
+                <input type="textARea" />
+                <button onClick={sendComment}>Submit</button>
             </div>
-            <p className='star'>입력하신 내용은 카카오톡 메세지로 전달됩니다. <br/>자유로운 의견을 남겨주세요😊</p>
+            
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { FaGithub, FaRegIdCard } from 'react-icons/fa';
+import { FaGithub, FaRegIdCard, FaVimeo } from 'react-icons/fa';
 import styled from 'styled-components';
 import myImage from '../images/photo.jpg';
 
@@ -19,15 +19,17 @@ function AboutMe(){
         let address='';
         if(page === 'notion'){
             address = 'https://www.notion.so/eunstudy/77c39fc1367e4f3890a2d2719b9e42b6';
-        }else{
+        }else if(page === 'github'){
             address = 'https://github.com/eunjeong09';
+        }else{
+            address = 'https://velog.io/@eunjeong';
         }
         window.open(address, '_blank'); 
         
 
     }
     return(
-        <div className="aboutMe">
+        <div id="aboutMe">
             <h2>About Me</h2>
             <div className="leftArea">
                 <Photo />
@@ -45,9 +47,13 @@ function AboutMe(){
                     <p><FaRegIdCard /></p>
                     <span>Notion</span>
                 </div>
-                <div  onClick={(e) => goPage(e, 'github')}>
+                <div onClick={(e) => goPage(e, 'github')}>
                     <p><FaGithub /></p>
                     <span>GitHub</span>
+                </div>
+                <div onClick={(e) => goPage(e, 'velog')}>
+                    <p><FaVimeo /></p>
+                    <span>velog</span>
                 </div>
             </div>
         </div>

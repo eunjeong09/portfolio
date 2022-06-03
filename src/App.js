@@ -30,7 +30,7 @@ const Header = styled.div`{
   
 }`;
 // const anchors = ["Main", "Experience", "Skill"];
-const anchors = ["Home", "Aboutme", "Experience", "Develop", "Skill", "Get In Touch"];
+const anchors = ["Home", "Aboutme", "Experience", "Develop", "Skill", "GetInTouch"];
 
 function App() {
   function goPage(e){

@@ -206,14 +206,18 @@ h2 {
   }
 }
 
-.aboutMe {
+#aboutMe {
   width: 70%;
   margin: 0 auto;
 }
 
-.aboutMe .leftArea {
+#aboutMe .leftArea {
   width: 20%;
   margin-right: 20px;
+}
+
+#aboutMe .flexBox div {
+  cursor: pointer;
 }
 
 #experience .wrap {
@@ -313,5 +317,9 @@ h2 {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 15;
+}
+
+#touch .commentArea {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
