@@ -35,20 +35,6 @@ const Header = styled.div`{
 const anchors = ["homeArea", "aboutmeArea", "experienceArea", "developArea", "skillArea", "touchArea"];
 
 function App() {
-  function goPage(e) {
-    console.log("goPage");
-    console.log(e.target);
-    console.log(e.currentTarget);
-  }
-
-  function clickLi() {
-    console.log('li');
-  }
-
-  function clickA() {
-    console.log("a");
-  }
-
   return (
     <Wrap>
       <Header>
