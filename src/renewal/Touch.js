@@ -1,8 +1,14 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FaPhoneAlt, FaRegEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { initKakao } from '../utils/common';
 
 function Touch() {
+    const [comment, setComment] = useState('');
+
+    const handleCommentChange = event => {
+        setComment(event.target.value);
+      };
+
     useEffect(() => {
         // 빌드 후에도 새로고침 시 에러 발생하는지 확인 필요
         initKakao();
@@ -15,8 +21,7 @@ function Touch() {
             data: {
                 template_object: {
                     object_type: 'text',
-                    text:
-                        '기본 템플릿으로 제공되는 텍스트 템플릿은 텍스트를 최대 200자까지 표시할 수 있습니다. 텍스트 템플릿은 텍스트 영역과 하나의 기본 버튼을 가집니다. 임의의 버튼을 설정할 수도 있습니다. 여러 장의 이미지, 프로필 정보 등 보다 확장된 형태의 카카오톡 공유는 다른 템플릿을 이용해 보낼 수 있습니다.',
+                    text: comment,
                     link: {
                         mobile_web_url: 'https://developers.kakao.com',
                         web_url: 'https://developers.kakao.com',
@@ -25,7 +30,8 @@ function Touch() {
                 },
             },
             success: function (response) {
-                console.log(response);
+                let commentInput = document.getElementById("comment");
+                commentInput.value = '';
             },
             fail: function (error) {
                 console.log(error);
@@ -64,7 +70,7 @@ function Touch() {
             <div className='commentArea'>
                 <h3>Comment</h3>
                 <p className='star'>입력하신 내용은 카카오톡 메세지로 전달됩니다. <br />자유로운 의견을 남겨주세요😊</p>
-                <input type="textARea" />
+                <input id="comment" type="textArea" onChange={handleCommentChange} />
                 <button onClick={sendComment}>Submit</button>
             </div>
 
