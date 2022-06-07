@@ -322,4 +322,25 @@ h2 {
 #touch .commentArea {
   margin-top: 30px;
 }
+
+#touch .commentArea input {
+  width: 100%;
+  margin: 20px 20px 20px 0px;
+  min-height: 80px;
+  border-radius: 5px;
+  background-color: #efefef;
+  border: none;
+}
+
+#touch .commentArea button {
+  border: none;
+  width: 100px;
+  letter-spacing: 3px;
+  background-color: #ef5b5b;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  float: right;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */

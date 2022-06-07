@@ -37,9 +37,8 @@ function Touch() {
                 console.log(error);
             },
         });
-
-
     }
+
     return (
         <div id='touch'>
             <h2>Get In Touch</h2>
@@ -71,7 +70,7 @@ function Touch() {
                 <h3>Comment</h3>
                 <p className='star'>입력하신 내용은 카카오톡 메세지로 전달됩니다. <br />자유로운 의견을 남겨주세요😊</p>
                 <input id="comment" type="textArea" onChange={handleCommentChange} />
-                <button onClick={sendComment}>Submit</button>
+                <button onClick={sendComment}>전송하기</button>
             </div>
 
         </div>
