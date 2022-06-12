@@ -33,6 +33,10 @@ h2 {
   font-weight: bold;
 }
 
+.inline {
+  display: inline-block;
+}
+
 .bottom20 {
   margin-bottom: 20px;
 }

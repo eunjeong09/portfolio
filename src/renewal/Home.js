@@ -17,8 +17,9 @@ function Home() {
     return (
         <div id='home'>
             <Photo />
-            <h2>고은정</h2>
-            <h3><b>성장하는</b> 프론트엔드 개발자입니다.</h3>
+            <h3><b>성장의 가치를 믿는</b> 프론트엔드 개발자</h3>
+            <h2 className='inline'>고은정</h2>
+            <h3 className='inline'>입니다.</h3>
             <div className="iconList">
                 {/* 깃, 벨로그,  */}
                 {/* <FaVimeoV /> */}
