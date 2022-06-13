@@ -37,6 +37,14 @@ h2 {
   display: inline-block;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.bottom10 {
+  margin-bottom: 10px;
+}
+
 .bottom20 {
   margin-bottom: 20px;
 }

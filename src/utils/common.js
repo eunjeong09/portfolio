@@ -6,9 +6,12 @@ export function initKakao() {
     if (!window.Kakao.isInitialized()) {
         // JavaScript key를 인자로 주고 SDK 초기화
         window.Kakao.init(KAKAO_KEY);
-        console.log("여기 안들어올텐데");
-        getToken();
+        // getToken();
     }
+}
+
+export function checkToken(){
+    
 }
 
 export function getToken() {
@@ -19,6 +22,7 @@ export function getToken() {
         success: function (response) {
             //카카오 SDK에 사용자 토큰을 설정한다.
             window.Kakao.Auth.setAccessToken(response.access_token);
+            console.log(response);
         },
         fail: function (error) {
             console.log(error);
