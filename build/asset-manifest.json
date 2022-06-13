@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a2e77edf.chunk.css",
-    "main.js": "/portfolio/static/js/main.c3210790.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c3210790.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.5b235a9a.chunk.css",
+    "main.js": "/portfolio/static/js/main.dcbe447e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dcbe447e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
-    "static/js/2.e1cd5250.chunk.js": "/portfolio/static/js/2.e1cd5250.chunk.js",
-    "static/js/2.e1cd5250.chunk.js.map": "/portfolio/static/js/2.e1cd5250.chunk.js.map",
+    "static/js/2.c475310b.chunk.js": "/portfolio/static/js/2.c475310b.chunk.js",
+    "static/js/2.c475310b.chunk.js.map": "/portfolio/static/js/2.c475310b.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.a2e77edf.chunk.css.map": "/portfolio/static/css/main.a2e77edf.chunk.css.map",
-    "static/js/2.e1cd5250.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e1cd5250.chunk.js.LICENSE.txt",
+    "static/css/main.5b235a9a.chunk.css.map": "/portfolio/static/css/main.5b235a9a.chunk.css.map",
+    "static/js/2.c475310b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c475310b.chunk.js.LICENSE.txt",
     "static/media/style.css": "/portfolio/static/media/NotoSansKR-Regular.e1aa54c0.otf",
-    "static/media/photo.9607e483.jpg": "/portfolio/static/media/photo.9607e483.jpg"
+    "static/media/cssSkill.bde5f16a.svg": "/portfolio/static/media/cssSkill.bde5f16a.svg",
+    "static/media/htmlSkill.2fb2b003.svg": "/portfolio/static/media/htmlSkill.2fb2b003.svg",
+    "static/media/javascriptSkill.cc9ffbfe.svg": "/portfolio/static/media/javascriptSkill.cc9ffbfe.svg",
+    "static/media/jquerySkill.c6cf299e.svg": "/portfolio/static/media/jquerySkill.c6cf299e.svg",
+    "static/media/photo.9607e483.jpg": "/portfolio/static/media/photo.9607e483.jpg",
+    "static/media/reactSkill.4c78d125.svg": "/portfolio/static/media/reactSkill.4c78d125.svg",
+    "static/media/vueSkill.29ad7c14.svg": "/portfolio/static/media/vueSkill.29ad7c14.svg",
+    "static/media/webDesign.ba75b083.png": "/portfolio/static/media/webDesign.ba75b083.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a9f76519.js",
-    "static/js/2.e1cd5250.chunk.js",
-    "static/css/main.a2e77edf.chunk.css",
-    "static/js/main.c3210790.chunk.js"
+    "static/js/2.c475310b.chunk.js",
+    "static/css/main.5b235a9a.chunk.css",
+    "static/js/main.dcbe447e.chunk.js"
   ]
 }
