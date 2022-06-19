@@ -72,7 +72,6 @@ function Touch() {
                 <input id="comment" type="textArea" onChange={handleCommentChange} />
                 <button onClick={sendComment}>전송하기</button>
             </div>
-
         </div>
     )
 }

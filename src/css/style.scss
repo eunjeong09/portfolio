@@ -27,6 +27,9 @@ h2 {
     font-size: 30px;
     font-weight: bold;
 }
+input:focus{
+    outline: none;
+}
 .inline{
     display: inline-block;
 }
@@ -262,22 +265,25 @@ h2 {
         
         input{
             width: 100%;
-            margin: 20px 20px 20px 0px;
+            margin: 30px 20px 20px 0px;
             min-height: 80px;
             border-radius: 5px;
             background-color: #efefef;
             border:none;
+            padding: 10px 20px;
+            box-sizing: border-box;
         }
         button{
             border: none;
             width: 100px;
             letter-spacing: 3px;
             background-color: #ef5b5b;
-            padding: 5px;
+            padding: 10px 5px;
             border-radius: 5px;
             color: #fff;
             float: right;
             font-weight: bold;
+            cursor: pointer;
         }
     }
 } 

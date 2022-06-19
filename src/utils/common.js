@@ -6,11 +6,12 @@ export function initKakao() {
     if (!window.Kakao.isInitialized()) {
         // JavaScript key를 인자로 주고 SDK 초기화
         window.Kakao.init(KAKAO_KEY);
-        // getToken();
+        getToken();
     }
 }
 
 export function checkToken(){
+    // 카카오 로그인 박스 출력을 막거나 고정 로그인 방법 찾기
     
 }
 
