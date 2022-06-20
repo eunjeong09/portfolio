@@ -8,6 +8,11 @@
   src: url(../font/SCDream7.otf);
 }
 
+@font-face {
+  font-family: "SCDream-medium";
+  src: url(../font/SCDream5.otf);
+}
+
 html {
   font-family: "SCDream";
   color: #333;
@@ -27,7 +32,10 @@ html * {
   margin: 0;
   padding: 0;
   list-style: none;
-  color: #333;
+}
+
+html .icon {
+  color: #f24c4c;
 }
 
 body {
@@ -62,6 +70,10 @@ input:focus {
   font-family: "SCDream-bold";
 }
 
+.medium {
+  font-family: "SCDream-medium";
+}
+
 .bgColor1 {
   background-color: #293462;
 }
@@ -86,6 +98,10 @@ input:focus {
   margin-bottom: 20px;
 }
 
+.bottom30 {
+  margin-bottom: 30px;
+}
+
 .flexBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,12 +115,13 @@ input:focus {
 .dash > li {
   position: relative;
   padding-left: 10px;
+  margin-bottom: 3px;
 }
 
 .dash > li::before {
   position: absolute;
   left: 0px;
-  top: 12px;
+  top: 8px;
   width: 6px;
   height: 1px;
   background-color: #333;
@@ -142,11 +159,14 @@ input:focus {
 
 .bubble {
   position: relative;
-  margin: 30px;
+  margin-left: 20px;
+  padding: 10px 20px;
   width: 100%;
-  height: 100%;
+  height: 210px;
   border-radius: 30px;
   border-color: #eee;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 #home {
@@ -177,7 +197,7 @@ input:focus {
 }
 
 #home .transformText {
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -294,21 +314,72 @@ input:focus {
 #experience .wrap {
   position: absolute;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 55%;
+  -webkit-transform: translate(-45%, -50%);
+          transform: translate(-45%, -50%);
   width: 80%;
 }
 
-.left {
+#experience .wrap .left {
   width: 50%;
   display: inline-block;
 }
 
-.right {
+#experience .wrap .left li {
+  position: relative;
+}
+
+#experience .wrap .right {
   width: 50%;
   display: inline-block;
   float: right;
+}
+
+#experience .wrap .right li {
+  position: relative;
+}
+
+#experience .wrap .icon {
+  font-size: 18px;
+  position: absolute;
+  left: -23px;
+  top: 2px;
+}
+
+#develop {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#develop .leftArea {
+  margin-right: 25px;
+}
+
+#develop .rightArea {
+  width: 47%;
+}
+
+#develop .dash {
+  margin-top: 20px;
+}
+
+#develop .colorBox {
+  border: 4px solid #ec983b;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#develop .colorBox h3 {
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  left: -25px;
+  top: -20px;
+  border-radius: 15px;
+  padding: 7px 15px;
+  color: #fff;
 }
 
 #skill {

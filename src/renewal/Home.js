@@ -37,8 +37,8 @@ function Home() {
                 {/* <FaVimeoV /> */}
             </div>
 
-            <p className='transformText'>PORTFOLIO</p>
-            <div className="bottomBox">
+            <p className='transformText medium'>PORTFOLIO</p>
+            <div className="bottomBox medium">
                 <p>2022</p>
                 <p>EUN_JEONG</p>
                 <p>ejko0911@gmail.com</p>

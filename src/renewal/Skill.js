@@ -10,7 +10,7 @@ import vue from '../images/vueSkill.svg';
 function Skill() {
     return (
         <div id="skill">
-            <h2>Skill</h2>
+            <h2 className='medium'>Skill</h2>
             <div className="skills">
                 <div className="skill">
                     <img src={html} />

@@ -21,7 +21,7 @@ const Header = styled.div`{
   position:fixed;
   right:0px;
   top: 20px;
-  padding: 0px 20px;
+  padding: 0px 20px 0px 50px;
   border-radius: 30px 0px 0px 30px;
   background-color:transparent;
   z-index:999; 

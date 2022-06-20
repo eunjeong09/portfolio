@@ -1,6 +1,6 @@
 import { FaGithub, FaRegIdCard, FaVimeo } from 'react-icons/fa';
 import styled from 'styled-components';
-import myImage from '../images/photo.jpg';
+import myImage from '../images/eunjeong2.jpeg';
 import { goPage } from '../utils/common';
 
 const Photo = styled.div`
@@ -10,37 +10,41 @@ const Photo = styled.div`
     height: 220px;
     background-color: #fff;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position:center;
     display: inline-block;
     margin-bottom: 30px;
+    border: 5px solid #293462;
 `;
 
 function AboutMe(){
     return(
         <div id="aboutMe">
-            <h2>About Me</h2>
+            <h2 className='medium'>About Me</h2>
             <Photo />
             <div className="rightArea">
                 <div className="bubble bgColor3">
-                    ------프론트엔드 개발자입니다.<br/>
-                    --<br/>
-                    --<br/>
-                    --<br/>
+                    개발자라는 직업에 대해 고민하며 공부하는<br/>
+                    프론트엔드 개발자 고은정입니다.<br/><br/>
+                    -adsfadfadfsadf 3~4줄 fadfasfsadfas-<br/>
+                    -adsfadfadfsadfadfadfadfasfsadfas-<br/>
+                    -adsfadfadfsadfadfadfadfasfsadfas-<br/>
+                    -adsfadfadfsadfadfadfadfasfsadfas-<br/>
+                    -adsfadfadfsadfadfadfadfasfsadfas-<br/>
                 </div>
             </div>
             <div className='flexBox'>
                 <div onClick={(e) => goPage(e, 'notion')}>
                     <p><FaRegIdCard /></p>
-                    <span className='bold'>Notion</span>
+                    <span className='medium'>Notion</span>
                 </div>
                 <div onClick={(e) => goPage(e, 'github')}>
                     <p><FaGithub /></p>
-                    <span className='bold'>GitHub</span>
+                    <span className='medium'>GitHub</span>
                 </div>
                 <div onClick={(e) => goPage(e, 'velog')}>
                     <p><FaVimeo /></p>
-                    <span className='bold'>velog</span>
+                    <span className='medium'>velog</span>
                 </div>
             </div>
         </div>

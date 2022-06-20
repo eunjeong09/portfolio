@@ -41,18 +41,18 @@ function Touch() {
 
     return (
         <div id='touch'>
-            <h2>Get In Touch</h2>
+            <h2 className='medium'>Get In Touch</h2>
             <div className='flexBox'>
                 <div className="touchBox">
                     <div><FaPhoneAlt /></div>
-                    <p>PHONE</p>
+                    <p className='medium'>PHONE</p>
                     <span>
                         010-9985-6676
                     </span>
                 </div>
                 <div className="touchBox">
                     <div><FaRegEnvelope /></div>
-                    <p>EMAIL</p>
+                    <p className='medium'>EMAIL</p>
                     <span>
                         <a style={{ padding: '20px' }} href='mailto:ejko0911@gmail.com'>ejko0911@gmail.com</a>
 
@@ -60,7 +60,7 @@ function Touch() {
                 </div>
                 <div className="touchBox">
                     <div><FaMapMarkerAlt /></div>
-                    <p>ADDRESS</p>
+                    <p className='medium'>ADDRESS</p>
                     <span>
                         서울특별시 성동구<br />독서당로59다길 28
                     </span>
