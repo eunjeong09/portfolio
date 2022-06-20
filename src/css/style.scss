@@ -162,12 +162,12 @@ input:focus{
             margin-bottom: 5px;
         }
     }
-    .iconList {
-        display: flex;
+    .iconList{
+        // width: 30%;
         justify-content: center;
         align-items: center;
-        font-size: 30px;
-        margin-top: 10px;
+        font-size: 20px;
+        margin-top: 20px;
         * {
             margin: 0px 10px;
             cursor: pointer;
@@ -208,13 +208,19 @@ input:focus{
 #aboutMe {
     width: 70%;
     margin: 0 auto;
+    .rightArea{
+        height: 200px;
+        width: 70%;
+        float: right;
+        display: inline-block;
 
-    .leftArea{
-        width: 20%;
-        margin-right: 20px;
     }
-    .flexBox div{
-        cursor: pointer;
+    .flexBox{
+        padding: 20px;
+        font-size: 20px;
+        div{
+            cursor: pointer;
+        }
     }
 }
 

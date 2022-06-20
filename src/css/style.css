@@ -201,17 +201,14 @@ input:focus {
 }
 
 #home .iconList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 30px;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 #home .iconList * {
@@ -278,9 +275,16 @@ input:focus {
   margin: 0 auto;
 }
 
-#aboutMe .leftArea {
-  width: 20%;
-  margin-right: 20px;
+#aboutMe .rightArea {
+  height: 200px;
+  width: 70%;
+  float: right;
+  display: inline-block;
+}
+
+#aboutMe .flexBox {
+  padding: 20px;
+  font-size: 20px;
 }
 
 #aboutMe .flexBox div {

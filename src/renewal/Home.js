@@ -1,6 +1,7 @@
-import {FaMouse } from 'react-icons/fa';
+import {FaMouse, FaGithub, FaRegIdCard, FaVimeo } from 'react-icons/fa';
 import styled from 'styled-components';
 import myImage from '../images/photo.jpg';
+import { goPage } from '../utils/common';
 
 const Photo = styled.div`
     border-radius:50%;
@@ -20,6 +21,17 @@ function Home() {
             <Photo />
             <h2 className='inline bold'>고은정</h2>
             <h3><b>성장의 가치를 믿는</b> 프론트엔드 개발자입니다.</h3>
+            <div className='flexBox iconList'>
+                <div onClick={(e) => goPage(e, 'notion')}>
+                    <p><FaRegIdCard /></p>
+                </div>
+                <div onClick={(e) => goPage(e, 'github')}>
+                    <p><FaGithub /></p>
+                </div>
+                <div onClick={(e) => goPage(e, 'velog')}>
+                    <p><FaVimeo /></p>
+                </div>
+            </div>
             <div className="iconList">
                 {/* 깃, 벨로그,  */}
                 {/* <FaVimeoV /> */}

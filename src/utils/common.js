@@ -30,3 +30,19 @@ export function getToken() {
         },
     });
 }
+
+export function goPage(e, page){
+    e.preventDefault();
+    
+    let address='';
+    if(page === 'notion'){
+        address = 'https://www.notion.so/eunstudy/77c39fc1367e4f3890a2d2719b9e42b6';
+    }else if(page === 'github'){
+        address = 'https://github.com/eunjeong09';
+    }else{
+        address = 'https://velog.io/@eunjeong';
+    }
+    window.open(address, '_blank'); 
+    
+
+}
