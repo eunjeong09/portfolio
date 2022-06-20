@@ -10,19 +10,26 @@ const Photo = styled.div`
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
-    margin: 0 auto;
+    background-color: #fff;
+    margin: 10% auto 20px;
 `;
 
 function Home() {
     return (
         <div id='home'>
             <Photo />
-            <h3><b>성장의 가치를 믿는</b> 프론트엔드 개발자</h3>
-            <h2 className='inline'>고은정</h2>
-            <h3 className='inline'>입니다.</h3>
+            <h2 className='inline bold'>고은정</h2>
+            <h3><b>성장의 가치를 믿는</b> 프론트엔드 개발자입니다.</h3>
             <div className="iconList">
                 {/* 깃, 벨로그,  */}
                 {/* <FaVimeoV /> */}
+            </div>
+
+            <p className='transformText'>PORTFOLIO</p>
+            <div className="bottomBox">
+                <p>2022</p>
+                <p>EUN_JEONG</p>
+                <p>ejko0911@gmail.com</p>
             </div>
 
             <div className="scroll">

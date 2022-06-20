@@ -1,22 +1,38 @@
 @font-face {
-  font-family: "NotoSans";
-  src: url(../font/NotoSansKR-Regular.otf);
+  font-family: "SCDream";
+  src: url(../font/SCDream3.otf);
 }
 
 @font-face {
-  font-family: "NotoSans-bold";
-  src: url(../font/NotoSansKR-Bold.otf);
+  font-family: "SCDream-bold";
+  src: url(../font/SCDream7.otf);
 }
 
 html {
-  font-family: "NotoSans";
+  font-family: "SCDream";
   color: #333;
+  width: 100vw;
+  height: 100vh;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 html * {
   margin: 0;
   padding: 0;
   list-style: none;
+  color: #333;
+}
+
+body {
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -27,8 +43,8 @@ a {
 
 h2 {
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 10%;
+  left: 7%;
   font-size: 30px;
   font-weight: bold;
 }
@@ -43,6 +59,23 @@ input:focus {
 
 .bold {
   font-weight: bold;
+  font-family: "SCDream-bold";
+}
+
+.bgColor1 {
+  background-color: #293462;
+}
+
+.bgColor2 {
+  background-color: #f24c4c;
+}
+
+.bgColor3 {
+  background-color: #ec983b;
+}
+
+.bgColor4 {
+  background-color: #f7d716;
 }
 
 .bottom10 {
@@ -102,28 +135,18 @@ input:focus {
   top: -2px;
 }
 
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #efefef;
+}
+
 .bubble {
   position: relative;
   margin: 30px;
-  padding: 10px 20px;
-  width: 400px;
-  height: 100px;
-  background: #eee;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
   border-color: #eee;
-  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-
-.bubble:after {
-  border-top: 15px solid #eee;
-  border-left: 15px solid transparent;
-  border-right: 0px solid transparent;
-  border-bottom: 0px solid transparent;
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: -15px;
 }
 
 #home {
@@ -131,6 +154,10 @@ input:focus {
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
   text-align: center;
+}
+
+#home * {
+  color: #fff;
 }
 
 #home h2 {
@@ -141,12 +168,36 @@ input:focus {
 }
 
 #home h3 {
-  margin-top: 10px;
+  margin-top: 20px;
   letter-spacing: 5px;
 }
 
 #home h3 b {
-  font-family: "NotoSans-bold";
+  font-family: "SCDream-bold";
+}
+
+#home .transformText {
+  letter-spacing: 2px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  background: none;
+  -webkit-transform: rotate(270deg) translateX(-50%);
+          transform: rotate(270deg) translateX(-50%);
+}
+
+#home .bottomBox {
+  text-align: left;
+  position: absolute;
+  left: 30px;
+  bottom: -50%;
+  -webkit-transform: translate(0, 0px);
+          transform: translate(0, 0px);
+}
+
+#home .bottomBox p {
+  margin-bottom: 5px;
 }
 
 #home .iconList {
@@ -171,14 +222,14 @@ input:focus {
 #home .scroll {
   position: absolute;
   left: 50%;
-  bottom: -30%;
+  bottom: -40%;
   -webkit-transform: translate(-50%, 0px);
           transform: translate(-50%, 0px);
 }
 
 #home .scroll p {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   display: block;
   width: 100px;
   left: 50%;
@@ -287,6 +338,7 @@ input:focus {
           transform: translate(-50%, -50%);
   font-weight: bold;
   font-size: 24px;
+  color: #333;
 }
 
 #touch {
@@ -362,5 +414,6 @@ input:focus {
   float: right;
   font-weight: bold;
   cursor: pointer;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

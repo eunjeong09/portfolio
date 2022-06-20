@@ -34,8 +34,8 @@ function AboutMe(){
             <div className="leftArea">
                 <Photo />
             </div>
-            <div className="rightArea">
-                <div className="bubble">
+            <div className="">
+                <div className="bubble bgColor3">
                     ------프론트엔드 개발자입니다.<br/>
                     --<br/>
                     --<br/>

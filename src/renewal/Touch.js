@@ -11,7 +11,7 @@ function Touch() {
 
     useEffect(() => {
         // 빌드 후에도 새로고침 시 에러 발생하는지 확인 필요
-        initKakao();
+        // initKakao();
     }, []);
     function sendComment() {
         console.log("sendComment");
@@ -66,12 +66,12 @@ function Touch() {
                     </span>
                 </div>
             </div>
-            <div className='commentArea'>
+            {/* <div className='commentArea'>
                 <h3>Comment</h3>
                 <p className='star'>입력하신 내용은 카카오톡 메세지로 전달됩니다. <br />자유로운 의견을 남겨주세요😊</p>
                 <input id="comment" type="textArea" onChange={handleCommentChange} />
                 <button onClick={sendComment}>전송하기</button>
-            </div>
+            </div> */}
         </div>
     )
 }
