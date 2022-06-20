@@ -18,7 +18,7 @@ html {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
     display: none;
 }
 html * {
@@ -27,14 +27,14 @@ html * {
     list-style: none;
     // color: #333;
 }
-html .icon{
+html .icon {
     color: #f24c4c;
 }
 body {
     width: 100%;
-    height: 100%;  
+    height: 100%;
 }
-a{
+a {
     color: #333;
     text-decoration: none;
     cursor: pointer;
@@ -46,32 +46,32 @@ h2 {
     font-size: 30px;
     font-weight: bold;
 }
-input:focus{
+input:focus {
     outline: none;
 }
-.inline{
+.inline {
     display: inline-block;
 }
-.bold{
+.bold {
     font-weight: bold;
     font-family: "SCDream-bold";
 }
-.medium{
+.medium {
     font-family: "SCDream-medium";
 }
-.bgColor1{
+.bgColor1 {
     background-color: #293462;
 }
-.bgColor2{
+.bgColor2 {
     background-color: #f24c4c;
 }
-.bgColor3{
+.bgColor3 {
     background-color: #ec983b;
 }
-.bgColor4{
+.bgColor4 {
     background-color: #f7d716;
 }
-.bottom10{
+.bottom10 {
     margin-bottom: 10px;
 }
 .bottom20 {
@@ -107,30 +107,30 @@ input:focus{
 .rightArea {
     display: inline-block;
 }
-.star{
+.star {
     position: relative;
     padding-left: 10px;
     color: #bcbcbc;
 }
-.star::before{
+.star::before {
     position: absolute;
-    content: '*';
+    content: "*";
     color: #ef5b5b;
     left: 0px;
     top: -2px;
 }
 // fullpage - navigation
-#fp-nav ul li a span, 
-.fp-slidesNav ul li a span{
-  background: #efefef;
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #efefef;
 }
 // 말풍선 - 왼쪽
 .bubble {
     position: relative;
     margin-left: 20px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     width: 100%;
-    height: 210px;
+    height: 190px;
     border-radius: 30px;
     border-color: #eee;
     font-size: 18px;
@@ -157,7 +157,7 @@ input:focus{
             font-family: "SCDream-bold";
         }
     }
-    .transformText{
+    .transformText {
         letter-spacing: 4px;
         color: #fff;
         position: absolute;
@@ -166,17 +166,17 @@ input:focus{
         background: none;
         transform: rotate(270deg) translateX(-50%);
     }
-    .bottomBox{
+    .bottomBox {
         text-align: left;
         position: absolute;
         left: 30px;
         bottom: -50%;
         transform: translate(0, 0px);
-        p{
+        p {
             margin-bottom: 5px;
         }
     }
-    .iconList{
+    .iconList {
         // width: 30%;
         justify-content: center;
         align-items: center;
@@ -222,22 +222,20 @@ input:focus{
 #aboutMe {
     width: 70%;
     margin: 0 auto;
-    .rightArea{
+    .rightArea {
         height: 200px;
         width: 70%;
         float: right;
         display: inline-block;
-
     }
-    .flexBox{
+    .flexBox {
         padding: 20px;
         font-size: 20px;
-        div{
+        div {
             cursor: pointer;
         }
     }
 }
-
 
 // Experience
 #experience .wrap {
@@ -249,7 +247,7 @@ input:focus{
     .left {
         width: 50%;
         display: inline-block;
-        li{
+        li {
             position: relative;
         }
     }
@@ -257,39 +255,38 @@ input:focus{
         width: 50%;
         display: inline-block;
         float: right;
-        li{
+        li {
             position: relative;
         }
     }
-    .icon{
+    .icon {
         font-size: 18px;
         position: absolute;
         left: -23px;
         top: 2px;
     }
-    
 }
 
 // Develop
-#develop{
+#develop {
     width: 80%;
     margin: 0 auto;
-    .leftArea{
+    .leftArea {
         margin-right: 25px;
     }
-    .rightArea{
+    .rightArea {
         width: 47%;
     }
-    .dash{
+    .dash {
         margin-top: 20px;
     }
-    .colorBox{
+    .colorBox {
         border: 4px solid #ec983b;
         position: relative;
         margin-bottom: 20px;
         padding: 20px;
         border-radius: 20px;
-        h3{
+        h3 {
             display: inline-block;
             padding: 5px 10px;
             position: absolute;
@@ -299,7 +296,6 @@ input:focus{
             padding: 7px 15px;
             color: #fff;
         }
-
     }
 }
 
@@ -330,29 +326,29 @@ input:focus{
 }
 
 // Touch
-#touch{
+#touch {
     width: 80%;
     margin: 0 auto;
 
-    .touchBox{
+    .touchBox {
         position: relative;
         border: 3px solid #ddd;
         text-align: center;
         width: 30%;
         min-height: 120px;
         padding: 20px 0px 10px 0px;
-        p{
+        p {
             font-weight: bold;
             margin-bottom: 20px;
             letter-spacing: 2px;
         }
-        span{
+        span {
             letter-spacing: 1px;
         }
     }
-    .touchBox::before{
+    .touchBox::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 30px;
         height: 30px;
         background-color: #fff;
@@ -360,29 +356,28 @@ input:focus{
         left: 50%;
         transform: translateX(-50%);
         z-index: 10;
-
     }
-    .touchBox > div{
+    .touchBox > div {
         position: absolute;
         top: -13px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 15;
     }
-    .commentArea{
+    .commentArea {
         margin-top: 30px;
-        
-        input{
+
+        input {
             width: 100%;
             margin: 30px 20px 20px 0px;
             min-height: 80px;
             border-radius: 5px;
             background-color: #efefef;
-            border:none;
+            border: none;
             padding: 10px 20px;
             box-sizing: border-box;
         }
-        button{
+        button {
             border: none;
             width: 100px;
             letter-spacing: 3px;
@@ -396,5 +391,4 @@ input:focus{
             font-size: 16px;
         }
     }
-} 
-
+}

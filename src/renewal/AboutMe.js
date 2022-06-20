@@ -24,13 +24,15 @@ function AboutMe(){
             <Photo />
             <div className="rightArea">
                 <div className="bubble bgColor3">
-                    개발자라는 직업에 대해 고민하며 공부하는<br/>
-                    프론트엔드 개발자 고은정입니다.<br/><br/>
-                    -adsfadfadfsadf 3~4줄 fadfasfsadfas-<br/>
-                    -adsfadfadfsadfadfadfadfasfsadfas-<br/>
-                    -adsfadfadfsadfadfadfadfasfsadfas-<br/>
-                    -adsfadfadfsadfadfadfadfasfsadfas-<br/>
-                    -adsfadfadfsadfadfadfadfasfsadfas-<br/>
+                    개발자라는 직업에 대해 고민하며 공부하는
+                    <b>프론트엔드 개발자</b> 고은정입니다.<br/><br/>
+
+                    새로운 분야, 기술에 대한 <b>도전과 학습</b>을 좋아하고, 주어진일에 <b>책임감이 강한</b>성격을 가지고 있습니다.<br />
+                    <b>서비스로 인한 편리함과 즐거움</b>을 개발의 목적이라고 생각합니다.<br />
+                    서비스를 함께 만들어가는 <b>협업</b>을 중요하게 생각하고, '함께 일하고 싶은 사람'이 되기 위해 노력합니다.<br/>
+                    밝은 성격과 낮은 웃음 장벽으로 새로운 환경에 적응하는데 어려움이 적습니다.<br /><br />
+                    아래 링크를 클릭해서 저의 성장을 둘러봐주세요!
+
                 </div>
             </div>
             <div className='flexBox'>
